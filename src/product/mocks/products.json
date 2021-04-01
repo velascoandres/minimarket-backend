@@ -1,0 +1,92 @@
+[
+    {
+      "id": 1,
+      "name": "Petigems",
+      "price": "14.88",
+      "category": 9
+    },
+    {
+      "id": 2,
+      "name": "Conjurica",
+      "price": "18.71",
+      "category": 2
+    },
+    {
+      "id": 3,
+      "name": "Incubus",
+      "price": "44.27",
+      "category": 8
+    },
+    {
+      "id": 4,
+      "name": "Zomboid",
+      "price": "24.09",
+      "category": 5
+    },
+    {
+      "id": 5,
+      "name": "Lunchpod",
+      "price": "3.76",
+      "category": 1
+    },
+    {
+      "id": 6,
+      "name": "Vidto",
+      "price": "40.67",
+      "category": 5
+    },
+    {
+      "id": 7,
+      "name": "Genmom",
+      "price": "21.14",
+      "category": 5
+    },
+    {
+      "id": 8,
+      "name": "Accruex",
+      "price": "43.7",
+      "category": 7
+    },
+    {
+      "id": 9,
+      "name": "Tsunamia",
+      "price": "8.46",
+      "category": 7
+    },
+    {
+      "id": 10,
+      "name": "Hairport",
+      "price": "28.15",
+      "category": 4
+    },
+    {
+      "id": 11,
+      "name": "Exerta",
+      "price": "17.1",
+      "category": 8
+    },
+    {
+      "id": 12,
+      "name": "Concility",
+      "price": "42.17",
+      "category": 8
+    },
+    {
+      "id": 13,
+      "name": "Zilch",
+      "price": "18.06",
+      "category": 8
+    },
+    {
+      "id": 14,
+      "name": "Accuprint",
+      "price": "8.98",
+      "category": 8
+    },
+    {
+      "id": 15,
+      "name": "Valreda",
+      "price": "29.64",
+      "category": 2
+    }
+  ]
