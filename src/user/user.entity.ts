@@ -1,6 +1,6 @@
 import {Column, Entity} from 'typeorm';
 import {AbstractMongoEntity, BaseDTO} from '@nest-excalibur/common-api/lib';
-import { IsNotEmpty, IsNumber } from 'class-validator';
+import { IsNotEmpty, IsNumber, IsString } from 'class-validator';
 
 @Entity()
 export class UserEntity extends AbstractMongoEntity {
@@ -10,6 +10,6 @@ export class UserEntity extends AbstractMongoEntity {
 
 
 export class UserCreateDTO extends BaseDTO {
-    @IsNumber()
+    @IsString()
     name: string;
 }
