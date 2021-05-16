@@ -6,12 +6,10 @@ import { CategoryEntity } from './category.entity';
 
 @Injectable()
 export class CategoryService extends AbstractService<CategoryEntity> {
-
-    constructor(
-        @InjectRepository(CategoryEntity)
-        private readonly categoryRespository: Repository<CategoryEntity>,
-    ) {
-        super(categoryRespository);
-    }
-
+  constructor(
+    @InjectRepository(CategoryEntity)
+    private readonly categoryRespository: Repository<CategoryEntity>,
+  ) {
+    super(categoryRespository);
+  }
 }

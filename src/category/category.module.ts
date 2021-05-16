@@ -8,20 +8,16 @@ import { CategoryCreateDTO } from './dto/category.dto';
 
 @Module({
   imports: [
-    TypeOrmModule.forFeature(
-      [CategoryEntity]
-    ),
-    DataBaseModule.forBulkData(
-      {
-        creationOrder: 1,
-        entity: CategoryEntity,
-        pathDev: '/src/category/mocks/categories.json',
-        dtoClassValidation: CategoryCreateDTO,
-        aliasName: 'Product Categories'
-      }
-    ),
+    TypeOrmModule.forFeature([CategoryEntity]),
+    DataBaseModule.forBulkData({
+      creationOrder: 1,
+      entity: CategoryEntity,
+      pathDev: '/src/category/mocks/categories.json',
+      dtoClassValidation: CategoryCreateDTO,
+      aliasName: 'Product Categories',
+    }),
   ],
   controllers: [CategoryController],
-  providers: [CategoryService]
+  providers: [CategoryService],
 })
 export class CategoryModule {}

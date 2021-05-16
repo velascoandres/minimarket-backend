@@ -1,14 +1,6 @@
 import { CrudController, CrudOptions } from '@nest-excalibur/common-api/lib';
-import {
-  GoogleCloudStorageService,
-  UploadedFileMetadata,
-} from '@nest-excalibur/google-cloud-storage';
-import {
-  Controller,
-  Post,
-  UploadedFile,
-  UseInterceptors,
-} from '@nestjs/common';
+import { GoogleCloudStorageService, UploadedFileMetadata } from '@nest-excalibur/google-cloud-storage';
+import { Controller, Post, UploadedFile, UseInterceptors } from '@nestjs/common';
 import { FileInterceptor } from '@nestjs/platform-express';
 import { ProductCreateDTO, ProductUpdateDto } from './dto/product.dto';
 import { ProductService } from './product.service';

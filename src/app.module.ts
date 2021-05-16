@@ -53,7 +53,7 @@ import { PostModule } from './post/post.module';
           port: 30503,
           authSource: 'admin',
           entities: [PostEntity, UserEntity],
-        }
+        },
       },
     }),
   ],
@@ -61,11 +61,9 @@ import { PostModule } from './post/post.module';
   providers: [AppService],
 })
 export class AppModule implements OnModuleInit {
-  constructor(private readonly dataBaseService: DataBaseService) { }
+  constructor(private readonly dataBaseService: DataBaseService) {}
 
   onModuleInit(): void {
-    this.dataBaseService
-      .insertData()
-      .then((_) => this.dataBaseService.showSummary());
+    this.dataBaseService.insertData().then((_) => this.dataBaseService.showSummary());
   }
 }
