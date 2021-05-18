@@ -7,6 +7,7 @@ import { DataBaseModule } from '@nest-excalibur/data-base';
 import { ProductCreateDTO } from './dto/product.dto';
 
 import { GoogleCloudStorageModule } from '@nest-excalibur/google-cloud-storage/lib';
+import { GoogleCloudVisionModule } from '@nest-excalibur/google-cloud-vision/lib';
 
 @Module({
   imports: [
@@ -18,6 +19,7 @@ import { GoogleCloudStorageModule } from '@nest-excalibur/google-cloud-storage/l
       dtoClassValidation: ProductCreateDTO,
     }),
     GoogleCloudStorageModule.register({ bucketDefaultName: 'pimba_test_gcs' }),
+    GoogleCloudVisionModule,
   ],
   providers: [ProductService],
   controllers: [ProductController],
