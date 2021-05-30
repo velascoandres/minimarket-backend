@@ -5,6 +5,7 @@ import { FileInterceptor } from '@nestjs/platform-express';
 import { ProductCreateDTO, ProductUpdateDto } from './dto/product.dto';
 import { ProductService } from './product.service';
 import { GoogleCloudVisionService } from '@nest-excalibur/google-cloud-vision/lib';
+import {CrudDoc} from '@nest-excalibur/crud-swagger/lib';
 
 const options: CrudOptions = {
   dtoConfig: {
@@ -13,6 +14,21 @@ const options: CrudOptions = {
   },
 };
 
+
+@CrudDoc(
+  {
+    createOne: {
+      apiBody: {
+        type: ProductCreateDTO,
+      }
+    },
+    updateOne: {
+      apiBody: {
+        type: ProductUpdateDto,
+      }
+    },
+  }
+)
 @Controller('product')
 export class ProductController extends CrudController(options) {
   constructor(
