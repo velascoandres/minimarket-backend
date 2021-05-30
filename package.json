@@ -21,8 +21,8 @@
     "test:e2e": "jest --config ./test/jest-e2e.json"
   },
   "dependencies": {
-    "@nest-excalibur/common-api": "0.0.2-test",
-    "@nest-excalibur/crud-swagger": "0.0.3",
+    "@nest-excalibur/common-api": "0.0.2",
+    "@nest-excalibur/crud-swagger": "0.0.4",
     "@nest-excalibur/data-base": "0.1.0",
     "@nest-excalibur/google-cloud-storage": "0.0.2-beta",
     "@nest-excalibur/google-cloud-vision": "0.0.2",
